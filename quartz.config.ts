@@ -10,12 +10,13 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "Quartz 4",
     pageTitleSuffix: "",
-    indexPage: "index.md",
+    indexPage: "home.md",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
+    
     locale: "en-US",
     baseUrl: "http://101.34.92.118:3000/",
     ignorePatterns: ["private", "templates", ".obsidian"],

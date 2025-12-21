@@ -9,3 +9,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+"FETCH_HEAD" 
+"git" 
+"nulecho" 
+"pc_pull.log" 

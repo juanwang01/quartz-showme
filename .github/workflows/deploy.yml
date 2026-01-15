@@ -1,0 +1,29 @@
+
+name: Deploy Quartz to GitHub Pages
+on:
+  push:
+    branches: [main]  # 推送到main分支触发
+  workflow_dispatch:  # 允许手动触发
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 拉取所有历史，保证Quartz解析笔记正常
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22  # 匹配仓库的.node-version指定的22版本
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci  # 严格安装package-lock.json中的依赖
+      - name: Build Quartz site
+        run: npm run build  # 生成静态文件到public目录
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # Quartz构建输出的目录
+          force_orphan: true  # 确保gh-pages分支干净

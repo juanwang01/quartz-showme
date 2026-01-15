@@ -1,29 +1,43 @@
-
+# 工作流名称
 name: Deploy Quartz to GitHub Pages
+# 触发条件：推送到main分支 / 手动触发
 on:
   push:
-    branches: [main]  # 推送到main分支触发
-  workflow_dispatch:  # 允许手动触发
+    branches: [main]
+  workflow_dispatch:
+
+# 定义任务
 jobs:
   build-and-deploy:
+    # 运行环境
     runs-on: ubuntu-latest
     steps:
+      # 步骤1：拉取仓库代码
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 拉取所有历史，保证Quartz解析笔记正常
+          fetch-depth: 0  # 拉取完整Git历史，保证Quartz解析笔记时间线
+          persist-credentials: false
+
+      # 步骤2：配置Node.js环境
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22  # 匹配仓库的.node-version指定的22版本
-          cache: 'npm'
+          node-version: 20  # 选用稳定的20 LTS版本，兼容Quartz v4
+          cache: 'npm'      # 缓存npm依赖，加速构建
+
+      # 步骤3：安装项目依赖
       - name: Install dependencies
-        run: npm ci  # 严格安装package-lock.json中的依赖
+        run: npm install  # 替换npm ci，避免依赖版本冲突问题
+
+      # 步骤4：构建Quartz静态网站（核心修复：使用Quartz v4官方命令）
       - name: Build Quartz site
-        run: npm run build  # 生成静态文件到public目录
+        run: npx quartz build
+
+      # 步骤5：部署到GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Quartz构建输出的目录
-          force_orphan: true  # 确保gh-pages分支干净
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub自动生成的令牌
+          publish_dir: ./public                      # Quartz构建输出的静态文件目录
+          force_orphan: true                         # 确保gh-pages分支干净，避免历史冲突

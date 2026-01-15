@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     
     locale: "en-US",
-    baseUrl: "http://101.34.92.118:3000/",
+    baseUrl: "/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

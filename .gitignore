@@ -17,3 +17,6 @@ replit.nix
 "git" 
 "nulecho" 
 "pc_pull.log" 
+
+.claude/
+content/.claude/

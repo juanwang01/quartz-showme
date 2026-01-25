@@ -11,10 +11,11 @@ title: 利用quartz开源项目搭建个人博客
 [[电脑端更新维护说明]]
 [[手机端更新维护说明]]
 
-# 知识系统架构说明
+# 知识系统数据连路说明
 
 
 ![](https://raw.gitcode.com/qq_57305183/PicGo/raw/main/d376e315b1f36cb178d6d7fa0cf00bbe.png)
+# 知识管理系统说明
 ![](https://raw.gitcode.com/qq_57305183/PicGo/raw/main/a284882aa04a19fb44be49e25a46c102.png)
 
 # 如果你想拥有就联系我吧😋

@@ -9,8 +9,8 @@
     <title>利用quartz开源项目搭建个人博客</title>
     <link>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E5%88%A9%E7%94%A8quartz%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</link>
     <guid>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E5%88%A9%E7%94%A8quartz%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</guid>
-    <description><![CDATA[ 很简单啊这个，就是用开源项目quartz4把md文件渲染成web网页就行。 文件同步就用git来完成，托管用的GitHub，服务器里面有个自动拉取脚本，每隔一段时间就去拉取最新版本更新。 本地就用obsidian软件来管理，非常的方便好看😋 然后更新维护就行了 电脑端更新维护说明 手机端更新维护说明 知识系统架构说明 如果你想拥有就联系我吧😋. ]]></description>
-    <pubDate>Sun, 25 Jan 2026 10:45:43 GMT</pubDate>
+    <description><![CDATA[ 很简单啊这个，就是用开源项目quartz4把md文件渲染成web网页就行。 文件同步就用git来完成，托管用的GitHub，服务器里面有个自动拉取脚本，每隔一段时间就去拉取最新版本更新。 本地就用obsidian软件来管理，非常的方便好看😋 然后更新维护就行了 电脑端更新维护说明 手机端更新维护说明 知识系统数据连路说明 知识管理系统说明 如果你想拥有就联系我吧😋. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 10:48:33 GMT</pubDate>
   </item><item>
     <title>2026年放生明细</title>
     <link>https:///quartz-showme/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E6%94%BE%E7%94%9F%E8%AE%A1%E5%88%92/2026%E5%B9%B4%E6%94%BE%E7%94%9F%E6%98%8E%E7%BB%86</link>

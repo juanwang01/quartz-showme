@@ -2,6 +2,7 @@
 .gitignore
 node_modules
 public
+!public/CNAME
 prof
 tsconfig.tsbuildinfo
 .obsidian

@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
 
     locale: "en-US",
-    baseUrl: "/",
+    baseUrl: "/quartz-showme/",
     cname: "longbatian.site",  // Custom domain for CNAME file
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",

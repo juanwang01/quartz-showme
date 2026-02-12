@@ -15,20 +15,20 @@ export function extractDomainFromBaseUrl(baseUrl: string) {
 export const CNAME: QuartzEmitterPlugin = () => ({
   name: "CNAME",
   async emit(ctx) {
-    if (!ctx.cfg.configuration.baseUrl) {
+    // Try to get domain from multiple sources
+    let domain = (ctx.cfg.configuration as any).cname ||  // Custom cname field
+                  extractDomainFromBaseUrl(ctx.cfg.configuration.baseUrl)
+
+    if (!domain) {
       console.warn(
-        styleText("yellow", "CNAME emitter requires `baseUrl` to be set in your configuration"),
+        styleText("yellow", "CNAME emitter requires `baseUrl` or `cname` to be set in your configuration"),
       )
-      return []
-    }
-    const content = extractDomainFromBaseUrl(ctx.cfg.configuration.baseUrl)
-    if (!content) {
       return []
     }
 
     const path = await write({
       ctx,
-      content,
+      content: domain,
       slug: "CNAME" as FullSlug,
       ext: "",
     })

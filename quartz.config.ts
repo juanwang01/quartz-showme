@@ -16,9 +16,10 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    
+
     locale: "en-US",
     baseUrl: "/",
+    cname: "longbatian.site",  // Custom domain for CNAME file
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -77,6 +78,7 @@ const config: QuartzConfig = {
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
+      Plugin.CNAME(),
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),

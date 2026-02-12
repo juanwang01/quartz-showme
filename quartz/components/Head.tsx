@@ -22,8 +22,9 @@ export default (() => {
 
     const { css, js, additionalHead } = externalResources
 
-    const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-    const path = url.pathname as FullSlug
+    const baseHost = cfg.baseUrl && !cfg.baseUrl.startsWith('/') ? cfg.baseUrl : "example.com"
+    const url = new URL(`https://${baseHost}`)
+    const path = (cfg.baseUrl ?? "/") as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
     const iconPath = joinSegments(baseDir, "static/icon.png")
 

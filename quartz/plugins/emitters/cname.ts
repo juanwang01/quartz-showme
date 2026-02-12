@@ -4,6 +4,10 @@ import { styleText } from "util"
 import { FullSlug } from "../../util/path"
 
 export function extractDomainFromBaseUrl(baseUrl: string) {
+  // Handle root path case
+  if (baseUrl === '/' || !baseUrl) {
+    return ""
+  }
   const url = new URL(`https://${baseUrl}`)
   return url.hostname
 }

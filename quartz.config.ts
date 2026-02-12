@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     
     locale: "en-US",
-    baseUrl: "/quartz-showme/",
+    baseUrl: "/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

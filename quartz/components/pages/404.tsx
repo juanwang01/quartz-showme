@@ -3,8 +3,9 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
   // If baseUrl contains a pathname after the domain, use this as the home link
-  const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-  const baseDir = url.pathname
+  const baseHost = cfg.baseUrl && !cfg.baseUrl.startsWith('/') ? cfg.baseUrl : "example.com"
+  const url = new URL(`https://${baseHost}`)
+  const baseDir = cfg.baseUrl ?? "/"
 
   return (
     <article class="popover-hint">

@@ -1,7 +1,7 @@
 ---
 title: claude使用
 ---
-claude --dangerously-skip-permissions
+![[Pasted image 20260213213933.png]]
 #危险模式
 ## 📖 Claude Code 实战全指南
 

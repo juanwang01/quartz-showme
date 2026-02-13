@@ -1,7 +1,8 @@
 ---
 title: claude使用
 ---
-
+claude --dangerously-skip-permissions
+#危险模式
 ## 📖 Claude Code 实战全指南
 
 ### 一、 基础入门与环境配置

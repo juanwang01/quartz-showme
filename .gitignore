@@ -21,3 +21,6 @@ replit.nix
 
 .claude/
 content/.claude/
+*.canvas
+*.excalidraw
+content/Excalidraw/

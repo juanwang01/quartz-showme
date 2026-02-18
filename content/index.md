@@ -12,7 +12,7 @@ title: 欢迎来到龙霸天的数字迷宫
 关于我的计划[[宏大的计划]]
 
 
-
+![[总架构.png]]
 [[2025年11月23日]]
 This is a blank Quartz installation.
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.

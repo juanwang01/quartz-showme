@@ -1,5 +1,10 @@
 ---
 title: claude使用
+tags:
+  - 技术
+  - AI
+  - Claude
+  - 工具使用
 ---
 claude --dangerously-skip-permissions
 #危险模式

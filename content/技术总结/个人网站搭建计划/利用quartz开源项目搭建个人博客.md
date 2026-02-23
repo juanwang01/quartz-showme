@@ -1,5 +1,11 @@
 ---
 title: 利用quartz开源项目搭建个人博客
+tags:
+  - 技术
+  - 博客
+  - Quartz
+  - Git
+  - Obsidian
 ---
 很简单啊这个，就是用开源项目quartz4把md文件渲染成web网页就行。
 

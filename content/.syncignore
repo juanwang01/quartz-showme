@@ -1,0 +1,28 @@
+# Obsidian 配置和插件
+.obsidian/
+.obsidian.plugins/
+
+# 回收站
+.trash/
+
+# 缩略图缓存
+.thumbnails/
+
+# Claude 相关
+.claude/
+
+# 临时文件
+*.tmp
+*.swp
+*.swo
+*~
+
+# 工作区文件
+.workspace
+
+# 各种编辑器/IDE 临时文件
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

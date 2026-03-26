@@ -17,6 +17,10 @@ tags:
 
 
 ![[总架构.png]]
-[[2025年11月23日]]
+
+感兴趣可以联系我：
+
+QQ：3078184064
+
 This is a blank Quartz installation.
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.

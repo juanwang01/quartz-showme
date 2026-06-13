@@ -8,9 +8,9 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
-    indexPage: "home.md",
+    pageTitle: "龙霸天的数字迷宫",
+    pageTitleSuffix: " | 佛法·感悟·技术·计划",
+    indexPage: "index",
     enableSPA: true,
     enablePopovers: true,
     analytics: {

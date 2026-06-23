@@ -1,5 +1,6 @@
 ---
 title: WSR案例分析
+description: WSR 方法论在实际案例中的应用分析。
 date: 2026-01-22
 tags:
   - 系统工程

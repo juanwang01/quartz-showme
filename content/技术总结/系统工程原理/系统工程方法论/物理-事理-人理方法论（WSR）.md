@@ -1,5 +1,6 @@
 ---
 title: 物理-事理-人理方法论（WSR）
+description: WSR 方法论的整体结构与理论说明。
 date: 2026-01-07
 tags:
   - 系统工程

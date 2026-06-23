@@ -1,5 +1,13 @@
 ---
 title: AI开发审计追踪
+description: 记录 AI 开发过程中的拆分、审计和验收思路。
+date: 2026-06-13
+tags:
+  - 技术
+  - AI
+  - 开发
+  - 审计
+status: active
 ---
 
 # AI会脑雾

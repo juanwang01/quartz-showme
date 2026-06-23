@@ -1,5 +1,12 @@
 ---
 title: 日常项目跟踪总结
+description: 日常项目、修行记录和阶段总结的归档入口。
+date: 2026-06-13
+tags:
+  - 计划
+  - 记录
+  - 总结
+status: published
 ---
 
 # 日常项目跟踪总结

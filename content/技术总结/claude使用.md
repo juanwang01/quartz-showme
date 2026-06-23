@@ -1,10 +1,15 @@
 ---
 title: claude使用
+description: Claude Code 的实战使用记录和工作流整理。
+date: 2026-06-13
 tags:
   - 技术
   - AI
   - Claude
   - 工具使用
+aliases:
+  - Claude使用
+status: active
 ---
 claude --dangerously-skip-permissions
 #危险模式

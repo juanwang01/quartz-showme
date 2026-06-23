@@ -1,11 +1,14 @@
 ---
 title: 利用quartz开源项目搭建个人博客
+description: 记录使用 Quartz 搭建个人博客和内容同步的基本思路。
+date: 2026-06-13
 tags:
   - 技术
   - 博客
   - Quartz
   - Git
   - Obsidian
+status: active
 ---
 很简单啊这个，就是用开源项目quartz4把md文件渲染成web网页就行。
 

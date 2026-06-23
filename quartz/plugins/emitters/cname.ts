@@ -3,9 +3,9 @@ import { write } from "./helpers"
 import { styleText } from "util"
 import { FullSlug } from "../../util/path"
 
-export function extractDomainFromBaseUrl(baseUrl: string) {
+export function extractDomainFromBaseUrl(baseUrl: string | undefined) {
   // Handle root path case
-  if (baseUrl === '/' || !baseUrl) {
+  if (baseUrl === "/" || !baseUrl) {
     return ""
   }
   const url = new URL(`https://${baseUrl}`)
@@ -16,12 +16,16 @@ export const CNAME: QuartzEmitterPlugin = () => ({
   name: "CNAME",
   async emit(ctx) {
     // Try to get domain from multiple sources
-    let domain = (ctx.cfg.configuration as any).cname ||  // Custom cname field
-                  extractDomainFromBaseUrl(ctx.cfg.configuration.baseUrl)
+    const domain =
+      (ctx.cfg.configuration as any).cname || // Custom cname field
+      extractDomainFromBaseUrl(ctx.cfg.configuration.baseUrl)
 
     if (!domain) {
       console.warn(
-        styleText("yellow", "CNAME emitter requires `baseUrl` or `cname` to be set in your configuration"),
+        styleText(
+          "yellow",
+          "CNAME emitter requires `baseUrl` or `cname` to be set in your configuration",
+        ),
       )
       return []
     }

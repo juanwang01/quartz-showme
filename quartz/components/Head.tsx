@@ -22,7 +22,7 @@ export default (() => {
 
     const { css, js, additionalHead } = externalResources
 
-    const baseHost = cfg.baseUrl && !cfg.baseUrl.startsWith('/') ? cfg.baseUrl : "example.com"
+    const baseHost = cfg.baseUrl && !cfg.baseUrl.startsWith("/") ? cfg.baseUrl : "example.com"
     const url = new URL(`https://${baseHost}`)
     const path = (cfg.baseUrl ?? "/") as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)

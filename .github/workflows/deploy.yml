@@ -1,51 +1,42 @@
-# 工作流名称：部署Quartz到GitHub Pages
 name: Deploy Quartz to GitHub Pages
 
-# 触发条件：推送到main分支自动触发 / 支持手动触发
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-# 显式授予Actions读写仓库的核心权限
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# 定义构建部署任务
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 步骤1：拉取仓库完整代码（包含Git历史）
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      # 步骤2：配置Node.js 22环境（匹配Quartz v4.5.2要求）
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'  # 缓存依赖加速构建
+          cache: npm
 
-      # 步骤3：安装项目依赖
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # 步骤4：构建Quartz静态网站（v4官方命令）
       - name: Build Quartz site
         run: npx quartz build
 
-      # 步骤5：部署到GitHub Pages（适配已存在的gh-pages分支）
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public          # Quartz构建输出目录
-          push_args: '--no-verify'      # 取消推送校验，规避权限限制
-          force_orphan: false           # 保留gh-pages分支历史，不再强制清空
-          keep_files: true              # 保留分支原有文件，仅更新新内容
+          publish_dir: ./public
+          push_args: --no-verify
+          force_orphan: false
+          keep_files: true

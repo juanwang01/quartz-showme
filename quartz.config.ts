@@ -1,4 +1,4 @@
-import { QuartzConfig } from "./quartz/cfg"
+﻿import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
@@ -17,9 +17,8 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
 
-    locale: "en-US",
-    baseUrl: "/quartz-showme/",
-    cname: "longbatian.site",  // Custom domain for CNAME file
+    locale: "zh-CN",
+    baseUrl: "longbatian.site",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -74,7 +73,7 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex",useLocalAssets: true,}),
+      Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

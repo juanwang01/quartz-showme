@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>梅花新易技术蒸馏 | 佛法·感悟·技术·计划</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="龙霸天的数字迷宫"/><meta property="og:title" content="梅花新易技术蒸馏 | 佛法·感悟·技术·计划"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="梅花新易技术蒸馏 | 佛法·感悟·技术·计划"/><meta name="twitter:description" content="贾双萍《梅花新易》方法论体系的结构化整理。"/><meta property="og:description" content="贾双萍《梅花新易》方法论体系的结构化整理。"/><meta property="og:image:alt" content="贾双萍《梅花新易》方法论体系的结构化整理。"/><meta property="twitter:domain" content="longbatian.site"/><meta property="og:url" content="https://longbatian.site/技术总结/梅花新易/梅花易术技术蒸馏"/><meta property="twitter:url" content="https://longbatian.site/技术总结/梅花新易/梅花易术技术蒸馏"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="贾双萍《梅花新易》方法论体系的结构化整理。"/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHhpYW5nbXVcXFNob3dNZVxccXVhcnR6XFxxdWFydHpcXGNvbXBvbmVudHNcXHN0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://longbatian.site/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://longbatian.site/技术总结/梅花新易/梅花易术技术蒸馏-og-image.webp"/><meta property="og:image:url" content="https://longbatian.site/技术总结/梅花新易/梅花易术技术蒸馏-og-image.webp"/><meta name="twitter:image" content="https://longbatian.site/技术总结/梅花新易/梅花易术技术蒸馏-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="技术总结/梅花新易/梅花易术技术蒸馏"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">龙霸天的数字迷宫</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-190"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-190" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../技术总结/">技术总结</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../技术总结/梅花新易/">梅花新易</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>梅花新易技术蒸馏</a></div></nav><h1 class="article-title">梅花新易技术蒸馏</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-12T16:00:00.000Z">2026年6月13日</time><span>17分钟阅读</span></p><ul class="tags"><li><a href="../../tags/梅花易数" class="internal tag-link">梅花易数</a></li><li><a href="../../tags/易经" class="internal tag-link">易经</a></li><li><a href="../../tags/断卦" class="internal tag-link">断卦</a></li><li><a href="../../tags/方法论" class="internal tag-link">方法论</a></li><li><a href="../../tags/贾双萍" class="internal tag-link">贾双萍</a></li></ul></div></div><article class="popover-hint"><h1 id="贾双萍梅花新易方法论体系">贾双萍《梅花新易》方法论体系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#贾双萍梅花新易方法论体系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>来源：《梅花新易》(中国商业出版社, 2009)、2009年面授班笔记、《六爻梅花卦例精解》
+本文档为梅花易数 AI 断卦系统的权威参考，所有算法和 Prompt 设计均以此为准。
+相关：<a href="../../梅花易数程序设计/梅花易数" class="internal alias" data-slug="梅花易数程序设计/梅花易数">梅花易数</a></p>
+</blockquote>
+<hr/>
+<h2 id="一核心理念">一、核心理念<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一核心理念" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>理念</th><th>说明</th></tr></thead><tbody><tr><td><strong>还易于民，道济天下</strong></td><td>化繁为简，让普通人能学会</td></tr><tr><td><strong>法无定法，我心为法</strong></td><td>灵活运用，不拘泥死板规则</td></tr><tr><td><strong>周易要符合生活之理</strong></td><td>断卦必须合情合理，不能脱离常识</td></tr></tbody></table></div>
+<hr/>
+<h2 id="二卦象结构">二、卦象结构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#二卦象结构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>起卦 → 主卦（本卦）→ 互卦 → 变卦
+         ↓              ↓       ↓
+       当前局面      中间过程  最终结果
+</code></pre>
+<ul>
+<li><strong>主卦（本卦）</strong>= 当前状态，体用两方现在的态势</li>
+<li><strong>互卦</strong> = 中间转折、介入的第三方、意外事件</li>
+<li><strong>变卦</strong> = 最终走向和结局</li>
+</ul>
+<p><strong>时间框架</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>层次</th><th>代表</th><th>说明</th></tr></thead><tbody><tr><td>本卦（体用）</td><td><strong>现在</strong></td><td>当前局势。体卦=卦主当前，用卦=对方/事情当前</td></tr><tr><td>互卦</td><td><strong>变化过程</strong></td><td>中间转折、介入第三方、意外事件</td></tr><tr><td>变卦</td><td><strong>最终结果</strong></td><td>最终走向。体卦不变（卦主本质不变），变用卦=对方/事情变化</td></tr></tbody></table></div>
+<hr/>
+<h2 id="三体用学说六大关系">三、体用学说（六大关系）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#三体用学说六大关系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>关系</th><th>含义</th></tr></thead><tbody><tr><td>1</td><td><strong>体用分辨</strong></td><td>动爻所在卦为<strong>用卦</strong>，不动之卦为<strong>体卦</strong>。体卦代表卦主自身</td></tr><tr><td>2</td><td><strong>体用相生</strong></td><td>用卦生体卦 → 大吉，外部环境助我</td></tr><tr><td>3</td><td><strong>体用帮扶</strong></td><td>同类五行之间相互辅助增强</td></tr><tr><td>4</td><td><strong>体用相克</strong></td><td>分两种：体克用(我掌控，可成但迟缓) vs 用克体(受制，凶险)</td></tr><tr><td>5</td><td><strong>体用比和</strong></td><td>五行相同 → 和谐顺利。<strong>唯一例外：婚姻中比和反易婚变</strong></td></tr><tr><td>6</td><td>体生用</td><td>泄气耗散，自身付出多，难成</td></tr><tr><td>7</td><td>用克体</td><td>受外部克制，凶险，易有灾祸</td></tr></tbody></table></div>
+<hr/>
+<h2 id="四断卦五大原则">四、断卦五大原则<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#四断卦五大原则" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>关系</th><th>判断</th><th>说明</th></tr></thead><tbody><tr><td><strong>用生体</strong></td><td>✅ 能成</td><td>最为吉利，事半功倍</td></tr><tr><td><strong>体克用</strong></td><td>✅ 能成</td><td>可成但耗时较长，需付出努力</td></tr><tr><td><strong>体用比和</strong></td><td>✅ 能成</td><td>顺遂（婚姻例外，比和反易婚变）</td></tr><tr><td><strong>体生用</strong></td><td>❌ 不成</td><td>泄体之气，自身消耗，难成</td></tr><tr><td><strong>用克体</strong></td><td>❌ 不成</td><td>凶险，易有灾祸</td></tr></tbody></table></div>
+<hr/>
+<h2 id="五日月旺衰体系贾双萍最大创新">五、日月旺衰体系（贾双萍最大创新）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#五日月旺衰体系贾双萍最大创新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="51-核心原则">5.1 核心原则<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#51-核心原则" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p>“有人认为梅花易数不看日月、不看旺衰，只要用生体就以吉断。这种理论有偏差。物极必反，旺极必然走向反面。”</p>
+</blockquote>
+<ul>
+<li><strong>必须日月双看</strong>：月支 + 日支，两者都对体卦旺衰有影响</li>
+<li>**月支主”以前”**的态势（已发生的）</li>
+<li>**日支主”以后”**的走向（将要发生的）</li>
+<li><strong>日月权重</strong>：日月之爻 > 动变之爻 > 静爻</li>
+</ul>
+<h3 id="52-旺相休囚死月令定旺衰">5.2 旺相休囚死（月令定旺衰）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#52-旺相休囚死月令定旺衰" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>以月令地支为基准，判定各五行旺衰状态：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>月令地支</th><th>旺</th><th>相</th><th>休</th><th>囚</th><th>死</th></tr></thead><tbody><tr><td>寅、卯（春）</td><td>木</td><td>火</td><td>水</td><td>金</td><td>土</td></tr><tr><td>巳、午（夏）</td><td>火</td><td>土</td><td>木</td><td>水</td><td>金</td></tr><tr><td>申、酉（秋）</td><td>金</td><td>水</td><td>土</td><td>火</td><td>木</td></tr><tr><td>亥、子（冬）</td><td>水</td><td>木</td><td>金</td><td>土</td><td>火</td></tr><tr><td>辰戌丑未（四季）</td><td>土</td><td>金</td><td>火</td><td>木</td><td>水</td></tr></tbody></table></div>
+<p><strong>旺衰分数</strong>：旺=5、相=4、休=2、囚=1、死=0</p>
+<p><strong>日支二级调整</strong>：</p>
+<ul>
+<li>日支生体 → +1.0 分</li>
+<li>日支与体比和 → +0.5 分</li>
+<li>日支克体 → -1.0 分</li>
+<li>体生日支(泄) → -0.5 分</li>
+<li>体克日支(耗) → -0.5 分</li>
+</ul>
+<h3 id="53-过旺反断">5.3 过旺反断<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#53-过旺反断" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>触发条件</strong>：体卦受用卦生 + 受月支生 + 受日支生 → <strong>过旺</strong>（≥3重生体）</p>
+<blockquote>
+<p>过旺反而不成！需要被克泄才能成功。</p>
+</blockquote>
+<p><strong>案例</strong>：乙酉月丁酉日得《泽山咸》，兑金为体。月酉金生体 + 日酉金生体 + 用艮土生体 → 三重生体 → 过旺 → 结果事情不成。</p>
+<p><strong>反断逻辑</strong>：旺而被克泄反成功。卯月卯日得《离为火》之《火山旅》，体卦离火太旺，被克泄反而成功。</p>
+<h3 id="54-过衰不废">5.4 过衰不废<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#54-过衰不废" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>触发条件</strong>：体卦受日月克泄 + 受用卦克泄 → <strong>过衰</strong>（≥3重克泄）</p>
+<blockquote>
+<p>过衰也不代表一事无成！等到得生助之时也可成。</p>
+</blockquote>
+<h3 id="55-太岁权重">5.5 太岁权重<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#55-太岁权重" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>太岁与体卦关系</th><th>断语</th></tr></thead><tbody><tr><td>太岁生体</td><td>有进益之喜</td></tr><tr><td>太岁泄体</td><td>有花钱之事</td></tr><tr><td>太岁克衰体</td><td>有灾</td></tr><tr><td>太岁克旺体</td><td>升官/工作调动</td></tr><tr><td>太岁与体比和</td><td>平安之年</td></tr><tr><td>旺体克太岁</td><td>有大财</td></tr></tbody></table></div>
+<hr/>
+<h2 id="六入墓体系">六、入墓体系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#六入墓体系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="61-五行墓库">6.1 五行墓库<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#61-五行墓库" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>五行</th><th>墓库地支</th></tr></thead><tbody><tr><td>金</td><td>丑</td></tr><tr><td>木</td><td>未</td></tr><tr><td>水</td><td>辰</td></tr><tr><td>土</td><td>辰</td></tr><tr><td>火</td><td>戌</td></tr></tbody></table></div>
+<h3 id="62-入墓吉凶">6.2 入墓吉凶<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#62-入墓吉凶" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p><strong>旺体入墓 → 无妨；衰体入墓 → 有灾</strong></p>
+</blockquote>
+<p><strong>案例</strong>：《坤为地》之《雷地豫》，变卦震为小孩，逢2003年未年（木入墓于未），断小孩该年死亡。</p>
+<h3 id="63-入墓应期">6.3 入墓应期<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#63-入墓应期" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>入库/入墓 → 逢冲（冲墓库）或临值（值墓库地支）之时为应期。</p>
+<hr/>
+<h2 id="七地支关系">七、地支关系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#七地支关系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="71-地支六合">7.1 地支六合<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#71-地支六合" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>地支</th><th>六合</th><th>地支</th><th>六合</th></tr></thead><tbody><tr><td>子</td><td>丑</td><td>丑</td><td>子</td></tr><tr><td>寅</td><td>亥</td><td>亥</td><td>寅</td></tr><tr><td>卯</td><td>戌</td><td>戌</td><td>卯</td></tr><tr><td>辰</td><td>酉</td><td>酉</td><td>辰</td></tr><tr><td>巳</td><td>申</td><td>申</td><td>巳</td></tr><tr><td>午</td><td>未</td><td>未</td><td>午</td></tr></tbody></table></div>
+<h3 id="72-地支六冲">7.2 地支六冲<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#72-地支六冲" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>地支</th><th>六冲</th><th>地支</th><th>六冲</th></tr></thead><tbody><tr><td>子</td><td>午</td><td>午</td><td>子</td></tr><tr><td>丑</td><td>未</td><td>未</td><td>丑</td></tr><tr><td>寅</td><td>申</td><td>申</td><td>寅</td></tr><tr><td>卯</td><td>酉</td><td>酉</td><td>卯</td></tr><tr><td>辰</td><td>戌</td><td>戌</td><td>辰</td></tr><tr><td>巳</td><td>亥</td><td>亥</td><td>巳</td></tr></tbody></table></div>
+<hr/>
+<h2 id="八应期方法">八、应期方法<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#八应期方法" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="81-核心规则">8.1 核心规则<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#81-核心规则" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>爻的状态</th><th>应期在</th></tr></thead><tbody><tr><td><strong>动爻</strong></td><td><strong>逢值</strong>（临值）、<strong>逢合</strong> 之时</td></tr><tr><td><strong>静爻</strong></td><td><strong>逢值</strong>、<strong>逢冲</strong> 之时</td></tr><tr><td><strong>破爻</strong>（月破/日破）</td><td><strong>临值</strong>、<strong>逢合</strong>、<strong>逢冲</strong> 之时</td></tr><tr><td><strong>入库/入墓</strong></td><td><strong>逢冲</strong>（冲墓库）或 <strong>临值</strong> 之时</td></tr></tbody></table></div>
+<h3 id="82-主应期层级">8.2 主应期层级<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#82-主应期层级" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>动爻位置</th><th>应期层级</th><th>说明</th></tr></thead><tbody><tr><td>初爻、二爻</td><td>时辰/日</td><td>应期较快，逢值逢合在数日内</td></tr><tr><td>三爻、四爻</td><td>日/月</td><td>应期适中，逢值逢合在数日到数月</td></tr><tr><td>五爻、上爻</td><td>月/年</td><td>应期较长，逢值逢合在数月到数年</td></tr></tbody></table></div>
+<h3 id="83-特殊应期">8.3 特殊应期<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#83-特殊应期" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>近病</strong>：逢冲则愈，逢合则死</li>
+<li><strong>久病</strong>：逢合则愈，逢冲则死</li>
+</ul>
+<h3 id="84-六爻取数体系">8.4 六爻取数体系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#84-六爻取数体系" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>地支</th><th>数字</th></tr></thead><tbody><tr><td>亥、子</td><td>1、6</td></tr><tr><td>寅、卯</td><td>3、8</td></tr><tr><td>巳、午</td><td>2、7</td></tr><tr><td>申、酉</td><td>4、9</td></tr><tr><td>辰、戌、丑、未</td><td>5、10</td></tr></tbody></table></div>
+<h3 id="85-流年应期太岁维度">8.5 流年应期（太岁维度）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#85-流年应期太岁维度" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>太岁生体之年 → 进益</li>
+<li>太岁泄体之年 → 破财</li>
+<li>太岁克衰体 → 有灾</li>
+<li>旺体克太岁 → 大财</li>
+<li>体入墓之年 → 旺体无妨，衰体有灾</li>
+</ul>
+<h3 id="86-全量时间槽">8.6 全量时间槽<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#86-全量时间槽" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>应期推算覆盖四个时间维度的全量槽位，每个槽位标注：</p>
+<ul>
+<li><strong>逢值</strong>：地支 = 动爻地支</li>
+<li><strong>逢合</strong>：地支 = 动爻地支的六合</li>
+<li><strong>逢冲</strong>：地支 = 动爻地支的六冲</li>
+<li><strong>入墓</strong>：地支 = 体卦五行墓库</li>
+<li><strong>冲墓</strong>：地支 = 墓库的六冲</li>
+<li><strong>有利</strong>：地支在体卦有利列表中</li>
+<li><strong>不利</strong>：地支在体卦不利列表中</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>维度</th><th>数量</th><th>起算方式</th></tr></thead><tbody><tr><td>时辰</td><td>12 个</td><td>五鼠遁，日干起时干</td></tr><tr><td>日期</td><td>30 天</td><td>日柱逐日推进</td></tr><tr><td>月份</td><td>12 月</td><td>五虎遁，年干起月干</td></tr><tr><td>年份</td><td>12 年</td><td>年柱逐年推进</td></tr></tbody></table></div>
+<hr/>
+<h2 id="九直读法三大直读">九、直读法（三大直读）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#九直读法三大直读" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="91-数字直读">9.1 数字直读<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#91-数字直读" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>上下卦直接读出数字。例：《山地剥》艮7坤8 → 78/87；《火泽睽》离3兑2 → 23/32。</p>
+<h3 id="92-卦象直读">9.2 卦象直读<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#92-卦象直读" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>直接从卦象读出事物特征。例：离=文凭/眼睛/火/红色，兑=口/说/缺/破损。</p>
+<h3 id="93-卦名直读">9.3 卦名直读<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#93-卦名直读" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>用卦名直接判断。例：</p>
+<ul>
+<li>天地否 → 否定、不通</li>
+<li>山地剥 → 摔落、失败、剥落</li>
+<li>水风井 → 被困、停滞</li>
+<li>火水未济 → 事未成</li>
+<li>火泽睽 → 瞪眼、争吵、分歧</li>
+</ul>
+<hr/>
+<h2 id="十万物类象贾双萍现代生活化新解">十、万物类象（贾双萍现代生活化新解）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十万物类象贾双萍现代生活化新解" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="101-八卦类象">10.1 八卦类象<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#101-八卦类象" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>卦</th><th>五行</th><th>人物</th><th>身体</th><th>场所</th><th>事物</th><th>性情</th></tr></thead><tbody><tr><td>乾☰</td><td>金</td><td>父/君/领导/老者/执法人员</td><td>头/骨/肺/腿/大肠</td><td>京城/官衙/高楼</td><td>金钱/珠宝/车马/贵重物</td><td>刚健/果决/威严</td></tr><tr><td>兑☱</td><td>金</td><td>少女/妾/巫师/销售人员</td><td>口/舌/喉/牙</td><td>泽/池/废墟/缺口处</td><td>乐器/金属器/破损物</td><td>喜悦/口舌/毁折</td></tr><tr><td>离☲</td><td>火</td><td>中女/文人/兵士</td><td>目/心/炎症</td><td>火场/炉灶/干燥地/房子</td><td>文书/甲胄/火器/发动机</td><td>文明/聪明/急躁</td></tr><tr><td>震☳</td><td>木</td><td>长男/将帅/青年</td><td>足/肝/发/神经</td><td>山林/大路/东方/车头</td><td>车船/乐器/草木/音响</td><td>奋动/决断/急躁</td></tr><tr><td>巽☴</td><td>木</td><td>长女/商贾/僧道/中介</td><td>股/胆/发/气管</td><td>园林/风路/东南/管路</td><td>丝绸/绳索/香烛/线路</td><td>柔顺/进退/犹豫</td></tr><tr><td>坎☵</td><td>水</td><td>中男/盗贼/渔人</td><td>耳/肾/血/病</td><td>江河/井泉/北方/水箱</td><td>水产/酒醋/弓轮/油箱</td><td>险陷/智谋/漂泊</td></tr><tr><td>艮☶</td><td>土</td><td>少男/童子/隐士</td><td>手/鼻/背/胃/肿瘤</td><td>山/丘陵/门阙/医院</td><td>石头/果实/黍稷/刹车</td><td>静止/固执/诚实</td></tr><tr><td>坤☷</td><td>土</td><td>母/臣民/老妇/众人</td><td>腹/脾/肉/肠胃</td><td>田野/平原/西南/底盘</td><td>布帛/陶器/米粮/车身</td><td>柔顺/包容/厚德</td></tr></tbody></table></div>
+<h3 id="102-八卦现代类象速查">10.2 八卦现代类象速查<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#102-八卦现代类象速查" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>卦</th><th>现代类象</th></tr></thead><tbody><tr><td>乾☰</td><td>政府/金钱/珠宝/车马/贵重物/领导/老板/父亲</td></tr><tr><td>兑☱</td><td>吃/说/破损/乐器/金属器/少女/教师/律师</td></tr><tr><td>离☲</td><td>文书/文凭/发动机/甲胄/红色/中女/文人/眼睛</td></tr><tr><td>震☳</td><td>车头/音响/车胎/乐器/草木/长男/将帅/足</td></tr><tr><td>巽☴</td><td>线路/空调/排气/丝绸/香烛/长女/中介/气管</td></tr><tr><td>坎☵</td><td>水箱/油箱/水产/酒醋/危险/中男/盗贼/耳肾</td></tr><tr><td>艮☶</td><td>刹车/石头/果实/结石/牢房/少男/童子/手鼻</td></tr><tr><td>坤☷</td><td>底盘/车身/布帛/陶器/米粮/母/老妇/腹</td></tr></tbody></table></div>
+<hr/>
+<h2 id="十一六亲体系飞宫寻六亲">十一、六亲体系（飞宫寻六亲）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十一六亲体系飞宫寻六亲" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>借鉴六爻纳甲，引入六亲概念到梅花断卦。以体卦五行为”我”来定六亲：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>六亲</th><th>五行关系</th><th>代表</th></tr></thead><tbody><tr><td><strong>父母</strong></td><td>生我者</td><td>文书、房屋、长辈、学业</td></tr><tr><td><strong>兄弟</strong></td><td>同我者</td><td>朋友、同事、竞争、平辈</td></tr><tr><td><strong>官鬼</strong></td><td>克我者</td><td>官职、疾病、官非、丈夫(女测)</td></tr><tr><td><strong>妻财</strong></td><td>我克者</td><td>钱财、妻子(男测)、财富、资产</td></tr><tr><td><strong>子孙</strong></td><td>我生者</td><td>子女、下属、娱乐、宠物</td></tr></tbody></table></div>
+<hr/>
+<h2 id="十二外应断事">十二、外应断事<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十二外应断事" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>不要刻意求外应</strong>，无意中碰到的才准</li>
+<li>外应优先级很高，可直断其事</li>
+<li>“周易的道理要符合生活之理”</li>
+</ul>
+<hr/>
+<h2 id="十三解灾方法">十三、解灾方法<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十三解灾方法" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>用<strong>地支通关</strong>化解五行相克：火水相克 → 用木通关（在南边放兔等属木之物）</li>
+<li>木土相克 → 用火通关</li>
+<li>解灾前需先<strong>放生</strong></li>
+<li>解灾物<strong>不能与事主生肖相冲克</strong></li>
+</ul>
+<hr/>
+<h2 id="十四一卦多断--多卦一断">十四、一卦多断 &amp; 多卦一断<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十四一卦多断--多卦一断" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>一卦多断</strong>：同一卦可同时看婚姻、事业、健康、六亲，信息全方位展开</li>
+<li><strong>多卦一断</strong>：同一件事用多个卦交叉验证</li>
+<li><strong>六爻与梅花同断</strong>：一事一断时以起卦方式决定主法；一卦多断时两法互验</li>
+</ul>
+<p><strong>一卦多断叠加规则</strong>：</p>
+<ul>
+<li>本卦·体 = 卦主现在的状态（性格/外貌/心态/处境）</li>
+<li>本卦·用 = 对方/事情现在的状态</li>
+<li>互卦 = 过程中出现的变数/介入方/转折</li>
+<li>变卦·体 = 卦主最终状态（同一体卦，本质不变）</li>
+<li>变卦·用 = 对方/事情最终的状态</li>
+</ul>
+<hr/>
+<h2 id="十五完整断卦流程10步">十五、完整断卦流程（10步）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十五完整断卦流程10步" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>Step 1  起卦       → 得主卦、互卦、变卦
+Step 2  定体用     → 动爻所在为用，不动为体
+Step 3  看日月     → 月支+日支对体卦的生克旺衰影响
+Step 4  看生克     → 体用五大原则判断基本吉凶
+Step 5  过旺过衰   → 是否触发反断（过旺不成、过衰不废）
+Step 6  看入墓     → 体卦五行是否入月/日/年支墓库
+Step 7  直读       → 卦名直读 + 卦象直读 + 数字直读
+Step 8  取象       → 万物类象落到具体人事，一卦多断
+Step 9  定应期     → 动爻逢值逢合 / 静爻逢值逢冲 / 入墓逢冲临值
+Step 10 综合判断   → 吉凶结论 + 应期 + 建议 + 解灾方案
+</code></pre>
+<hr/>
+<h2 id="十六对-ai-断卦的-prompt-设计指导">十六、对 AI 断卦的 Prompt 设计指导<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十六对-ai-断卦的-prompt-设计指导" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="设计原则">设计原则<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#设计原则" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>固定推理链路，不可乱改</strong>：AI 必须严格按 10 步流程断卦</li>
+<li><strong>本地计算先行</strong>：卦象推演、干支历法、旺衰应期全部本地完成，AI 只做解读</li>
+<li><strong>结构化输入</strong>：AI 接收的是完整的本地计算结果（时间坐标 + 卦象 + 旺衰 + 全量时间槽）</li>
+<li><strong>纯文本输出</strong>：不要 JSON，按 8 板块模板输出自然语言</li>
+</ol>
+<h3 id="prompt-必须包含的数据">Prompt 必须包含的数据<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#prompt-必须包含的数据" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>起卦时间（公历 + 农历 + 四柱 + 月令 + 节气区间）</li>
+<li>卦象信息（本卦/互卦/变卦/上下卦名称/体用判定）</li>
+<li>五行生克（原用卦分析/变用卦分析/互卦分析/综合结论）</li>
+<li>日月旺衰（体卦+各用卦的旺衰状态/日支影响/入墓/过旺过衰/太岁）</li>
+<li>应期数据（动爻地支/逢值逢合逢冲/墓库/全量时间槽66条带标记）</li>
+<li>八卦万物类象速查表（让 AI 取象时落在具体人事上）</li>
+<li>六亲体系（飞宫寻六亲参考）</li>
+</ul>
+<h3 id="ai-输出模板8-板块">AI 输出模板（8 板块）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-输出模板8-板块" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>🔮 卦象解读    — 卦名直读、卦象直读、数字直读
+👤 现状核验    — 从卦象反推求测者当下状态、场景、心境
+⚖️ 吉凶判断    — 一个字：吉/凶/平 + 解释
+🔥 旺衰分析    — 体卦+各用卦旺衰，过旺过衰是否触发，入墓情况
+🔄 过程推演    — 互卦揭示的中间转折、介入方、意外事件
+🏁 结果预测    — 变卦揭示的最终走向，各方最终状态
+⏰ 应期判断    — 逢值逢合的具体时间窗口
+💡 应对建议    — 具体可操作的行动方案，含通关解灾方法
+</code></pre>
+<hr/>
+<blockquote>
+<p>相关：<a href="../../技术总结/疑问驱动AI辅助八字探索流" class="internal alias" data-slug="技术总结/疑问驱动AI辅助八字探索流">疑问驱动AI辅助八字探索流</a> | <a href="../../技术总结/因果推算" class="internal alias" data-slug="技术总结/因果推算">因果推算</a> | <a href="../../技术总结/系统工程原理/方法论系统总纲" class="internal alias" data-slug="技术总结/系统工程原理/方法论系统总纲">方法论系统总纲</a></p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-57" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#贾双萍梅花新易方法论体系" data-for="贾双萍梅花新易方法论体系">贾双萍《梅花新易》方法论体系</a></li><li class="depth-1"><a href="#一核心理念" data-for="一核心理念">一、核心理念</a></li><li class="depth-1"><a href="#二卦象结构" data-for="二卦象结构">二、卦象结构</a></li><li class="depth-1"><a href="#三体用学说六大关系" data-for="三体用学说六大关系">三、体用学说（六大关系）</a></li><li class="depth-1"><a href="#四断卦五大原则" data-for="四断卦五大原则">四、断卦五大原则</a></li><li class="depth-1"><a href="#五日月旺衰体系贾双萍最大创新" data-for="五日月旺衰体系贾双萍最大创新">五、日月旺衰体系（贾双萍最大创新）</a></li><li class="depth-2"><a href="#51-核心原则" data-for="51-核心原则">5.1 核心原则</a></li><li class="depth-2"><a href="#52-旺相休囚死月令定旺衰" data-for="52-旺相休囚死月令定旺衰">5.2 旺相休囚死（月令定旺衰）</a></li><li class="depth-2"><a href="#53-过旺反断" data-for="53-过旺反断">5.3 过旺反断</a></li><li class="depth-2"><a href="#54-过衰不废" data-for="54-过衰不废">5.4 过衰不废</a></li><li class="depth-2"><a href="#55-太岁权重" data-for="55-太岁权重">5.5 太岁权重</a></li><li class="depth-1"><a href="#六入墓体系" data-for="六入墓体系">六、入墓体系</a></li><li class="depth-2"><a href="#61-五行墓库" data-for="61-五行墓库">6.1 五行墓库</a></li><li class="depth-2"><a href="#62-入墓吉凶" data-for="62-入墓吉凶">6.2 入墓吉凶</a></li><li class="depth-2"><a href="#63-入墓应期" data-for="63-入墓应期">6.3 入墓应期</a></li><li class="depth-1"><a href="#七地支关系" data-for="七地支关系">七、地支关系</a></li><li class="depth-2"><a href="#71-地支六合" data-for="71-地支六合">7.1 地支六合</a></li><li class="depth-2"><a href="#72-地支六冲" data-for="72-地支六冲">7.2 地支六冲</a></li><li class="depth-1"><a href="#八应期方法" data-for="八应期方法">八、应期方法</a></li><li class="depth-2"><a href="#81-核心规则" data-for="81-核心规则">8.1 核心规则</a></li><li class="depth-2"><a href="#82-主应期层级" data-for="82-主应期层级">8.2 主应期层级</a></li><li class="depth-2"><a href="#83-特殊应期" data-for="83-特殊应期">8.3 特殊应期</a></li><li class="depth-2"><a href="#84-六爻取数体系" data-for="84-六爻取数体系">8.4 六爻取数体系</a></li><li class="depth-2"><a href="#85-流年应期太岁维度" data-for="85-流年应期太岁维度">8.5 流年应期（太岁维度）</a></li><li class="depth-2"><a href="#86-全量时间槽" data-for="86-全量时间槽">8.6 全量时间槽</a></li><li class="depth-1"><a href="#九直读法三大直读" data-for="九直读法三大直读">九、直读法（三大直读）</a></li><li class="depth-2"><a href="#91-数字直读" data-for="91-数字直读">9.1 数字直读</a></li><li class="depth-2"><a href="#92-卦象直读" data-for="92-卦象直读">9.2 卦象直读</a></li><li class="depth-2"><a href="#93-卦名直读" data-for="93-卦名直读">9.3 卦名直读</a></li><li class="depth-1"><a href="#十万物类象贾双萍现代生活化新解" data-for="十万物类象贾双萍现代生活化新解">十、万物类象（贾双萍现代生活化新解）</a></li><li class="depth-2"><a href="#101-八卦类象" data-for="101-八卦类象">10.1 八卦类象</a></li><li class="depth-2"><a href="#102-八卦现代类象速查" data-for="102-八卦现代类象速查">10.2 八卦现代类象速查</a></li><li class="depth-1"><a href="#十一六亲体系飞宫寻六亲" data-for="十一六亲体系飞宫寻六亲">十一、六亲体系（飞宫寻六亲）</a></li><li class="depth-1"><a href="#十二外应断事" data-for="十二外应断事">十二、外应断事</a></li><li class="depth-1"><a href="#十三解灾方法" data-for="十三解灾方法">十三、解灾方法</a></li><li class="depth-1"><a href="#十四一卦多断--多卦一断" data-for="十四一卦多断--多卦一断">十四、一卦多断 &amp; 多卦一断</a></li><li class="depth-1"><a href="#十五完整断卦流程10步" data-for="十五完整断卦流程10步">十五、完整断卦流程（10步）</a></li><li class="depth-1"><a href="#十六对-ai-断卦的-prompt-设计指导" data-for="十六对-ai-断卦的-prompt-设计指导">十六、对 AI 断卦的 Prompt 设计指导</a></li><li class="depth-2"><a href="#设计原则" data-for="设计原则">设计原则</a></li><li class="depth-2"><a href="#prompt-必须包含的数据" data-for="prompt-必须包含的数据">Prompt 必须包含的数据</a></li><li class="depth-2"><a href="#ai-输出模板8-板块" data-for="ai-输出模板8-板块">AI 输出模板（8 板块）</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-2" class="overflow"><li><a href="../../技术总结/技术总结" class="internal">技术总结</a></li><li><a href="../../技术总结/梅花新易/卦例" class="internal">梅花易数卦例</a></li><li><a href="../../技术总结/梅花新易/卦辞与生克冲突辨析" class="internal">卦辞与生克冲突辨析</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="/">首页</a></li><li><a href="/技术总结/个人网站搭建计划/Quartz网站优化路线图">路线图</a></li><li><a href="/技术总结/个人网站搭建计划/电脑端更新维护说明">维护说明</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../../postscript.js" type="module"></script></html>

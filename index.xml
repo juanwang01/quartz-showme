@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>Quartz 4</title>
-      <link>https:///quartz-showme/</link>
-      <description>Last 10 notes on Quartz 4</description>
+      <title>龙霸天的数字迷宫</title>
+      <link>https://longbatian.site</link>
+      <description>最近的10条笔记 on 龙霸天的数字迷宫</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>利用quartz开源项目搭建个人博客</title>
-    <link>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E5%88%A9%E7%94%A8quartz%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</link>
-    <guid>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E5%88%A9%E7%94%A8quartz%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2</guid>
-    <description><![CDATA[ 很简单啊这个，就是用开源项目quartz4把md文件渲染成web网页就行。 文件同步就用git来完成，托管用的GitHub，服务器里面有个自动拉取脚本，每隔一段时间就去拉取最新版本更新。 本地就用obsidian软件来管理，非常的方便好看😋 然后更新维护就行了 电脑端更新维护说明 手机端更新维护说明 知识系统数据连路说明 知识管理系统说明 如果你想拥有就联系我吧😋. ]]></description>
-    <pubDate>Sun, 25 Jan 2026 10:48:33 GMT</pubDate>
+    <title>方法论系统</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E5%8E%9F%E7%90%86/%E6%96%B9%E6%B3%95%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%B2</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B%E5%8E%9F%E7%90%86/%E6%96%B9%E6%B3%95%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%B2</guid>
+    <description><![CDATA[ 方法论层级结构 在个人认知与工程实践中，方法论并非杂乱使用，而是呈现**“核心调度—工具支撑—效果检验”**的层级体系。 一、核心调度方法论（顶层） 日常思考与工程问题处理中，人们普遍以问题驱动（目标驱动）方法论作为总核心，负责统筹、调度与选用其他所有工具。 以疑问驱动进行深入挖掘直达本质 其基本逻辑为： 明确问题与目标 → 选择合适工具 → 执行与分析 → 评估效果 → 迭代优化 它是思考的起点与主线，决定何时分析原因、何时设计方案、何时评估优劣。 二、中层支撑工具（被调度使用） 在核心框架下，根据任务需求调用各类专用方法论： 1. ]]></description>
+    <pubDate>Sun, 28 Jun 2026 09:03:20 GMT</pubDate>
   </item><item>
-    <title>2026年放生明细</title>
-    <link>https:///quartz-showme/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E6%94%BE%E7%94%9F%E8%AE%A1%E5%88%92/2026%E5%B9%B4%E6%94%BE%E7%94%9F%E6%98%8E%E7%BB%86</link>
-    <guid>https:///quartz-showme/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E6%94%BE%E7%94%9F%E8%AE%A1%E5%88%92/2026%E5%B9%B4%E6%94%BE%E7%94%9F%E6%98%8E%E7%BB%86</guid>
-    <description><![CDATA[ 2025年放生明细 2026年1月3日 放生活动支出50 2026年1月5日 弥勒圣诞放生活动支出50 2026年1月10日 以圆满完成，支出50 2026年1月17日 圆满完成，支持50 2026年1月19日 农历腊月初一放生活动支出50 2026年1月23日 放生活动支出50. ]]></description>
-    <pubDate>Thu, 22 Jan 2026 04:49:50 GMT</pubDate>
+    <title>梅花易数卦例</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E5%8D%A6%E4%BE%8B</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E5%8D%A6%E4%BE%8B</guid>
+    <description><![CDATA[ 基于贾双萍《梅花新易》方法论的实战卦例记录与分析 ]]></description>
+    <pubDate>Sat, 27 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>十年白银战争（1970-1980）</title>
-    <link>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E5%95%86%E4%B8%9A%E6%88%98%E4%BA%89/%E5%8D%81%E5%B9%B4%E7%99%BD%E9%93%B6%E6%88%98%E4%BA%89%EF%BC%881970-1980%EF%BC%89</link>
-    <guid>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E5%95%86%E4%B8%9A%E6%88%98%E4%BA%89/%E5%8D%81%E5%B9%B4%E7%99%BD%E9%93%B6%E6%88%98%E4%BA%89%EF%BC%881970-1980%EF%BC%89</guid>
-    <description><![CDATA[ 十年白银战争（1970-1980） 核心摘要 1970-1980年间，德克萨斯石油大亨班克·亨特和赫伯特·亨特兄弟试图通过大量囤积现货白银来垄断全球白银市场。这场持续十年的金融战役从1970年白银1.5美元/盎司开始，到1980年3月达到50美元/盎司的顶峰，最终在美国联邦储备委员会、商品交易所和东海岸老钱家族的联合打压下崩溃，亨特兄弟从世界首富沦为破产。 一、金银基础知识 1.1 黄金的独特性 黄金的物理特性 唯一性：黄金是宇宙中唯一在富氧环境下保持游离单金属态的元素 抗腐蚀性：自然界中任何物质都不能腐蚀黄金 稀缺性：黄金是超新星爆发后核聚变的最终产物，地球储量极少 1.2 白银的特性 白银... ]]></description>
-    <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
+    <title>卦辞与生克冲突辨析</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E5%8D%A6%E8%BE%9E%E4%B8%8E%E7%94%9F%E5%85%8B%E5%86%B2%E7%AA%81%E8%BE%A8%E6%9E%90</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E5%8D%A6%E8%BE%9E%E4%B8%8E%E7%94%9F%E5%85%8B%E5%86%B2%E7%AA%81%E8%BE%A8%E6%9E%90</guid>
+    <description><![CDATA[ 解析《梅花易数》中卦大象义与体用生克的优先级冲突，引用邵雍原文"占卜总诀"与"卦断遗论" ]]></description>
+    <pubDate>Sat, 27 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>人类文明发展规律</title>
-    <link>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E4%BA%BA%E7%B1%BB%E6%96%87%E6%98%8E%E5%8F%91%E5%B1%95%E8%A7%84%E5%BE%8B</link>
-    <guid>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E4%BA%BA%E7%B1%BB%E6%96%87%E6%98%8E%E5%8F%91%E5%B1%95%E8%A7%84%E5%BE%8B</guid>
-    <description><![CDATA[ 从佛法视角分析人类文明发展规律，探讨专制与民主制度的本质、特点及发展趋势 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>路人问感情</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E8%B7%AF%E4%BA%BA%E9%97%AE%E6%84%9F%E6%83%85</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E8%B7%AF%E4%BA%BA%E9%97%AE%E6%84%9F%E6%83%85</guid>
+    <description><![CDATA[ 代人占天地否变天山遁，卦大象义与体用生克冲突的典型案例——否卦闭塞+遁卦退避压倒用生体 ]]></description>
+    <pubDate>Sat, 27 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>从阿罗汉到凡夫</title>
-    <link>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E4%BB%8E%E9%98%BF%E7%BD%97%E6%B1%89%E5%88%B0%E5%87%A1%E5%A4%AB</link>
-    <guid>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E4%BB%8E%E9%98%BF%E7%BD%97%E6%B1%89%E5%88%B0%E5%87%A1%E5%A4%AB</guid>
-    <description><![CDATA[ 详细阐述阿罗汉如何因执着心而堕落为凡夫的过程，包括分段生死机制和执着心发展的十个阶段 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>城市基本信息综合表</title>
+    <link>https://longbatian.site/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E8%BF%9C%E8%A1%8C%E8%AE%A1%E5%88%92/%E5%9F%8E%E5%B8%82%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E7%BB%BC%E5%90%88%E8%A1%A8</link>
+    <guid>https://longbatian.site/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E8%BF%9C%E8%A1%8C%E8%AE%A1%E5%88%92/%E5%9F%8E%E5%B8%82%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E7%BB%BC%E5%90%88%E8%A1%A8</guid>
+    <description><![CDATA[ 起卦问远行 城市基本信息综合表 表 1 城市五行与水气基础信息 城市宏观方位五行地形水气特征北京北方燥土 + 金华北平原，河湖少，全年干燥，水气弱上海东方木 + 近海大水滨江临海、河网密布，水气极重广州南方旺火 + 低洼湿土珠江冲积平原，雨水充沛，湿热明显深圳南方离火 + 滨海大水临海多海湾，火气足、近海大水气泛滥成都西南坤湿土封闭盆地，江河、绿植密集，常年高湿重庆西南燥土 + 旺火山地高差大，两江穿城但通风散湿，水气轻微南京东南木火 + 丘陵燥土丘陵地形，仅梅雨季短期潮湿，整体干爽武汉中南火 + 两江大水长江、汉江交汇，水域广阔，水气偏重杭州东方木 + 湖海大水多湖泊山林，木气、水气双旺盛 ... ]]></description>
+    <pubDate>Mon, 22 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>初妄无因逻辑线</title>
-    <link>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E5%88%9D%E5%A6%84%E6%97%A0%E5%9B%A0%E9%80%BB%E8%BE%91%E7%BA%BF</link>
-    <guid>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E5%88%9D%E5%A6%84%E6%97%A0%E5%9B%A0%E9%80%BB%E8%BE%91%E7%BA%BF</guid>
-    <description><![CDATA[ 阐述心识从自性到妄想、分别心、执着的发展过程，以及从凡夫到成佛的修行次第 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>起卦问远行</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E8%B5%B7%E5%8D%A6%E9%97%AE%E8%BF%9C%E8%A1%8C</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E8%B5%B7%E5%8D%A6%E9%97%AE%E8%BF%9C%E8%A1%8C</guid>
+    <description><![CDATA[ 起卦问远行 起卦信息 时间：20:29 日期：丙午年 甲午月 戊辰日 起卦数：20 - 16 = 4（上卦）| 29 - 24 = 5（下卦）| 9 - 6 = 3（动爻） 卦象 阶段卦名上卦下卦本卦雷风恒震雷 ☳巽风 ☴变卦雷水解震雷 ☳坎水 ☵ 断语：持之以恒方能化解。 体用分析 体卦：震为雷——雷为动，代表想动、想跑路，与事实印证 本卦：雷风恒，上震下巽皆属木，体用比和 变卦：雷水解，上震木下坎水，水生木，用生体，大吉 时令分析 月令：午火当令，木生火 → 木休（休囚无力） 夏天（火旺）：木生火，木休 秋天（金旺）：金克木，木死 冬天（水旺）：水生木，木相，最吉 春天（木旺）：木当令，最... ]]></description>
+    <pubDate>Mon, 22 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>完整的世界结构</title>
-    <link>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%96%E7%95%8C%E7%BB%93%E6%9E%84</link>
-    <guid>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%96%E7%95%8C%E7%BB%93%E6%9E%84</guid>
-    <description><![CDATA[ 详细阐述佛法中的完整世界结构，包括须弥山的位置与结构、三界二十八天、六道轮回等宇宙观 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>修行阅读器原型——项目实施方案</title>
+    <link>https://longbatian.site/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E4%BF%AE%E8%A1%8C%E9%98%85%E8%AF%BB%E5%99%A8%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1/%E4%BF%AE%E8%A1%8C%E9%98%85%E8%AF%BB%E5%99%A8%E5%8E%9F%E5%9E%8B</link>
+    <guid>https://longbatian.site/%E6%88%91%E7%9A%84%E8%AE%A1%E5%88%92/%E4%BF%AE%E8%A1%8C%E9%98%85%E8%AF%BB%E5%99%A8%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1/%E4%BF%AE%E8%A1%8C%E9%98%85%E8%AF%BB%E5%99%A8%E5%8E%9F%E5%9E%8B</guid>
+    <description><![CDATA[ 修行阅读器原型——项目实施方案 项目定义 本项目的目标，是把现有 md 资料库整理成一个可长期维护、可阅读、可检索、可问答、可沉淀笔记的本地知识系统。 当前项目不是”继续收集资料”，而是围绕现有数据库与 App 交互形态做两件事： 把原始 md 数据库优化成适合手机阅读和检索的内容底座 在 app/ 中落地一个纯本地离线的阅读与问答应用 最终交付分两层： 无 API 时：本地离线阅读器，支持内容入口、章节目录、全文检索、标签跳转、阅读进度和本地笔记 配置 API 时：在本地数据库检索基础上启用 AI 问答，支持会话管理、当前页上下文问答和一键生成笔记 这个项目的本质，不是单做 UI，也不是单做... ]]></description>
+    <pubDate>Sun, 21 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>完整的世界观</title>
-    <link>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%96%E7%95%8C%E8%A7%82</link>
-    <guid>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E5%AE%8C%E6%95%B4%E7%9A%84%E4%B8%96%E7%95%8C%E8%A7%82</guid>
-    <description><![CDATA[ 阐述佛法的完整世界观，包括三大底层设定（自性恒常、初妄无因、诸佛同体）、三观体系和两条逻辑主线 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>起卦问姻缘</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E8%B5%B7%E5%8D%A6%E9%97%AE%E5%A7%BB%E7%BC%98</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%A2%85%E8%8A%B1%E6%96%B0%E6%98%93/%E8%B5%B7%E5%8D%A6%E9%97%AE%E5%A7%BB%E7%BC%98</guid>
+    <description><![CDATA[ 自占地火明夷变水火既济，问何时能确立恋爱关系 ]]></description>
+    <pubDate>Sat, 13 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>自性重叠逻辑线</title>
-    <link>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E8%87%AA%E6%80%A7%E9%87%8D%E5%8F%A0%E9%80%BB%E8%BE%91%E7%BA%BF</link>
-    <guid>https:///quartz-showme/%E4%BD%9B%E6%B3%95/%E8%87%AA%E6%80%A7%E9%87%8D%E5%8F%A0%E9%80%BB%E8%BE%91%E7%BA%BF</guid>
-    <description><![CDATA[ 详细阐述自性重叠逻辑线（诸佛同体线），包括业力原理、因果定律、法界最初故事、七级发心、四大职业、度人流程等完整体系 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>欢迎来到龙霸天的数字迷宫</title>
+    <link>https://longbatian.site/</link>
+    <guid>https://longbatian.site/</guid>
+    <description><![CDATA[ 个人公开知识库首页，汇总佛法、人生感悟、技术总结和个人计划四个主入口。 ]]></description>
+    <pubDate>Fri, 12 Jun 2026 16:00:00 GMT</pubDate>
   </item><item>
-    <title>手机端更新维护说明</title>
-    <link>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%9B%B4%E6%96%B0%E7%BB%B4%E6%8A%A4%E8%AF%B4%E6%98%8E</link>
-    <guid>https:///quartz-showme/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E6%89%8B%E6%9C%BA%E7%AB%AF%E6%9B%B4%E6%96%B0%E7%BB%B4%E6%8A%A4%E8%AF%B4%E6%98%8E</guid>
-    <description><![CDATA[ 在 Android 手机端使用 Termux 和 Git 同步 Obsidian 笔记的完整指南 ]]></description>
-    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <title>人生感悟 - 实践与修行</title>
+    <link>https://longbatian.site/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/README</link>
+    <guid>https://longbatian.site/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/README</guid>
+    <description><![CDATA[ 个人修行实践、心性成长、生命体验的深度反思与总结 ]]></description>
+    <pubDate>Fri, 12 Jun 2026 16:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

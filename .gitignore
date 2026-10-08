@@ -10,6 +10,11 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# 坚果云同步临时文件
+*.nutstore-sync-*
+*.nutstore-sync-*.download
+
 "FETCH_HEAD" 
 "git" 
 "nulecho" 

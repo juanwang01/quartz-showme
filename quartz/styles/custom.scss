@@ -59,6 +59,65 @@
   }
 }
 
+// ---- 首页重点推荐卡片 ----
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2.4rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--lightgray);
+  border-left: 3px solid var(--secondary);
+  border-radius: 10px;
+  background: var(--light);
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+
+  &:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  p:first-child a.internal {
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--dark);
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+
+  p:nth-child(2) {
+    font-size: 0.9rem;
+    color: var(--darkgray);
+  }
+
+  p:last-child {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.76rem;
+    color: var(--gray);
+    letter-spacing: 0.03em;
+  }
+}
+
 @media all and (max-width: 600px) {
   .portal-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -67,5 +126,14 @@
 
   .portal-card {
     padding: 0.8rem 0.9rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .feature-card {
+    padding: 0.9rem 1rem;
   }
 }

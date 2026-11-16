@@ -18,6 +18,12 @@
     <description><![CDATA[ 历史是看，阿里巴巴，淘宝出来的时候，就是2002年之后那个非典后，电商产业就开始了 然后上面一堆卖假货的， 后面淘宝整了个天猫，然后开始收拾假货商家，整高端的商品，正版货 那个天猫就是弄出来的正版合作品牌的 然后假货劣质产品就被遗留出空间了 那个黄征就开始发明了个拼多多，专门做这个便宜货市场. ]]></description>
     <pubDate>Mon, 16 Nov 2026 08:17:31 GMT</pubDate>
   </item><item>
+    <title>个人网站自动化发布管线搭建记录</title>
+    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8F%91%E5%B8%83%E7%AE%A1%E7%BA%BF%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95-2026-11-16</link>
+    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8F%91%E5%B8%83%E7%AE%A1%E7%BA%BF%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95-2026-11-16</guid>
+    <description><![CDATA[ 从坚果云同步、Quartz 构建到 GitHub Pages 发布的完整自动化管线，包含故障处理、邮件告警与服务器退役计划。 ]]></description>
+    <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
+  </item><item>
     <title>质量管理规范</title>
     <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AD%E8%8D%AF%E6%9D%90%E5%90%AB%E9%87%8FQC/%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E8%A7%84%E8%8C%83</link>
     <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E4%B8%AD%E8%8D%AF%E6%9D%90%E5%90%AB%E9%87%8FQC/%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86%E8%A7%84%E8%8C%83</guid>
@@ -58,12 +64,6 @@
     <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E7%B4%A0%E9%A3%9F%E7%A7%91%E6%8A%80/%E8%91%B1%E6%B2%B9%E9%9D%A2</link>
     <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E7%B4%A0%E9%A3%9F%E7%A7%91%E6%8A%80/%E8%91%B1%E6%B2%B9%E9%9D%A2</guid>
     <description><![CDATA[ 碗底先用葱油、生抽、老抽、白糖调好酱汁，碱水面煮到八分熟，舀两勺面汤化开酱汁，捞面拌匀。 ]]></description>
-    <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-  </item><item>
-    <title>蒜蓉蒸茄子</title>
-    <link>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E7%B4%A0%E9%A3%9F%E7%A7%91%E6%8A%80/%E8%92%9C%E8%93%89%E8%92%B8%E8%8C%84%E5%AD%90</link>
-    <guid>https://longbatian.site/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E7%B4%A0%E9%A3%9F%E7%A7%91%E6%8A%80/%E8%92%9C%E8%93%89%E8%92%B8%E8%8C%84%E5%AD%90</guid>
-    <description><![CDATA[ 长茄子一分为二蒸 10–12 分钟，蒜蓉分两份——一份生蒸入味，一份炒香泼油，蒜香层次更足。 ]]></description>
     <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
   </item>
     </channel>

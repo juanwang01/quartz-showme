@@ -62,7 +62,32 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
   ]
 
+  // The configured fonts only cover Latin glyphs. Satori falls back per glyph,
+  // so append a local CJK font for titles/descriptions written in Chinese.
+  fonts.push(...(await getCjkFallbackFonts()))
+
   return fonts
+}
+
+const cjkFontFiles: Array<{ file: string; weight: FontWeight }> = [
+  { file: "NotoSansSC-Regular.ttf", weight: 400 },
+  { file: "NotoSansSC-Bold.ttf", weight: 700 },
+]
+
+let cjkFontsPromise: Promise<SatoriOptions["fonts"]> | undefined
+
+function getCjkFallbackFonts(): Promise<SatoriOptions["fonts"]> {
+  cjkFontsPromise ??= Promise.all(
+    cjkFontFiles.map(async ({ file, weight }) => {
+      try {
+        const data = await fs.readFile(path.join(QUARTZ, "fonts", file))
+        return { name: "Noto Sans SC", data, weight, style: "normal" as const }
+      } catch {
+        return null
+      }
+    }),
+  ).then((fonts) => fonts.filter((font): font is NonNullable<typeof font> => font !== null))
+  return cjkFontsPromise
 }
 
 /**

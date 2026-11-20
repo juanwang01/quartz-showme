@@ -73,9 +73,8 @@ async function processOgImage(
 ) {
   const cfg = ctx.cfg.configuration
   const slug = fileData.slug!
-  const titleSuffix = cfg.pageTitleSuffix ?? ""
-  const title =
-    (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+  // Don't append pageTitleSuffix here: on a card it just crowds the title and gets clipped.
+  const title = fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
   const description =
     fileData.frontmatter?.socialDescription ??
     fileData.frontmatter?.description ??

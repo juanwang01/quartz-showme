@@ -66,6 +66,26 @@ async function generateSocialImage(
   return sharp(Buffer.from(svg)).png()
 }
 
+const escapeXml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+
+async function squareThumb(title: string, baseUrl?: string): Promise<Buffer> {
+  const short = title.length > 10 ? `${title.slice(0, 10)}…` : title
+  const fontSize = short.length > 8 ? 24 : 28
+  const domain = escapeXml((baseUrl ?? "").replace(/^https?:\/\//, ""))
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+    <rect width="300" height="300" fill="#faf8f8"/>
+    <rect x="90" y="30" width="120" height="120" rx="28" fill="#161618"/>
+    <text x="150" y="112" font-family="Noto Serif CJK SC" font-weight="900" font-size="76"
+          text-anchor="middle" dominant-baseline="central" fill="#faf8f8">龙</text>
+    <text x="150" y="224" font-family="Noto Serif CJK SC" font-weight="700" font-size="${fontSize}"
+          text-anchor="middle" fill="#161618">${escapeXml(short)}</text>
+    <text x="150" y="262" font-family="Noto Sans CJK SC" font-size="13"
+          text-anchor="middle" fill="#9a9a9a">${domain}</text>
+  </svg>`
+  return sharp(Buffer.from(svg)).png().toBuffer()
+}
+
 async function processOgImage(
   ctx: BuildCtx,
   fileData: QuartzPluginData,
@@ -81,7 +101,7 @@ async function processOgImage(
     fileData.frontmatter?.description ??
     unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
 
-  const stream = await generateSocialImage(
+  const image = await generateSocialImage(
     {
       title,
       description,
@@ -91,11 +111,23 @@ async function processOgImage(
     },
     fullOptions,
   )
+  const card = await image.png().toBuffer()
+
+  await write({
+    ctx,
+    content: card,
+    slug: `${slug}-og-image` as FullSlug,
+    ext: ".png",
+  })
+
+  // Square thumbnail for crawlers (e.g. WeChat) that pick up the first <img> on a page.
+  // Cropping the wide card loses the title, so draw a dedicated square instead.
+  const thumb = await squareThumb(title, cfg.baseUrl)
 
   return write({
     ctx,
-    content: stream,
-    slug: `${slug}-og-image` as FullSlug,
+    content: thumb,
+    slug: `${slug}-og-thumb` as FullSlug,
     ext: ".png",
   })
 }

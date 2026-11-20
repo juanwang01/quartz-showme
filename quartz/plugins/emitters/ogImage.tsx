@@ -93,42 +93,10 @@ async function squareThumb(): Promise<Buffer> {
   }
 }
 
-async function processOgImage(
-  ctx: BuildCtx,
-  fileData: QuartzPluginData,
-  fonts: SatoriOptions["fonts"],
-  fullOptions: SocialImageOptions,
-) {
-  const cfg = ctx.cfg.configuration
+async function processOgImage(ctx: BuildCtx, fileData: QuartzPluginData) {
+  // Only the square dragon mark is used (og:image and WeChat cards both point at it),
+  // so skip the slow satori-rendered wide card entirely.
   const slug = fileData.slug!
-  // Don't append pageTitleSuffix here: on a card it just crowds the title and gets clipped.
-  const title = fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
-  const description =
-    fileData.frontmatter?.socialDescription ??
-    fileData.frontmatter?.description ??
-    unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
-
-  const image = await generateSocialImage(
-    {
-      title,
-      description,
-      fonts,
-      cfg,
-      fileData,
-    },
-    fullOptions,
-  )
-  const card = await image.png().toBuffer()
-
-  await write({
-    ctx,
-    content: card,
-    slug: `${slug}-og-image` as FullSlug,
-    ext: ".png",
-  })
-
-  // Square thumbnail for crawlers (e.g. WeChat) that pick up the first <img> on a page.
-  // Cropping the wide card loses the title, so draw a dedicated square instead.
   const thumb = await squareThumb()
 
   return write({
@@ -149,28 +117,18 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       return []
     },
     async *emit(ctx, content, _resources) {
-      const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
-
       for (const [_tree, vfile] of content) {
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
-        yield processOgImage(ctx, vfile.data, fonts, fullOptions)
+        yield processOgImage(ctx, vfile.data)
       }
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
-      const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
-
       // find all slugs that changed or were added
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
         if (changeEvent.type === "add" || changeEvent.type === "change") {
-          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
+          yield processOgImage(ctx, changeEvent.file.data)
         }
       }
     },

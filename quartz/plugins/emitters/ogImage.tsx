@@ -192,21 +192,16 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
                 : `https://${baseUrl}/static/${userDefinedOgImagePath}`
             }
 
+            // WeChat's link card uses og:image, so point it at the square dragon mark.
             const generatedOgImagePath = isRealFile
-              ? `https://${baseUrl}/${pageData.slug!}-og-image.png`
+              ? `https://${baseUrl}/${pageData.slug!}-og-thumb.jpg`
               : undefined
-            const defaultOgImagePath = `https://${baseUrl}/static/og-image.png`
+            const defaultOgImagePath = `https://${baseUrl}/static/dragon-mark.png`
             const ogImagePath = userDefinedOgImagePath ?? generatedOgImagePath ?? defaultOgImagePath
-            const ogImageMimeType = `image/${getFileExtension(ogImagePath)?.replace(/^\./, "") ?? "png"}`
+            const ogImageExt = getFileExtension(ogImagePath)?.replace(/^\./, "") ?? "png"
+            const ogImageMimeType = `image/${ogImageExt === "jpg" ? "jpeg" : ogImageExt}`
             return (
               <>
-                {!userDefinedOgImagePath && (
-                  <>
-                    <meta property="og:image:width" content={fullOptions.width.toString()} />
-                    <meta property="og:image:height" content={fullOptions.height.toString()} />
-                  </>
-                )}
-
                 <meta property="og:image" content={ogImagePath} />
                 <meta property="og:image:url" content={ogImagePath} />
                 <meta name="twitter:image" content={ogImagePath} />

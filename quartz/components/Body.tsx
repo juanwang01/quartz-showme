@@ -11,10 +11,10 @@ const Body: QuartzComponent = ({ children, fileData, cfg }: QuartzComponentProps
   const shareThumb =
     cfg.baseUrl && !cfg.baseUrl.startsWith("/")
       ? usePageThumb
-        ? `https://${cfg.baseUrl}/${fileData.slug!}-og-thumb.png`
+        ? `https://${cfg.baseUrl}/${fileData.slug!}-og-thumb.jpg`
         : `https://${cfg.baseUrl}/static/og-image.png`
       : usePageThumb
-        ? `/${fileData.slug!}-og-thumb.png`
+        ? `/${fileData.slug!}-og-thumb.jpg`
         : `/static/og-image.png`
 
   return (

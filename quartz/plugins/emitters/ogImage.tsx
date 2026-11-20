@@ -79,7 +79,7 @@ async function squareThumb(): Promise<Buffer> {
       .toBuffer()
     return await sharp(canvas)
       .composite([{ input: inset, top: 10, left: 10 }])
-      .png({ palette: true, colours: 96 })
+      .jpeg({ quality: 84 })
       .toBuffer()
   } catch {
     // Fallback if the artwork is missing: a plain 龙 glyph tile.
@@ -89,7 +89,7 @@ async function squareThumb(): Promise<Buffer> {
       <text x="150" y="152" font-family="Noto Serif CJK SC" font-weight="900" font-size="76"
             text-anchor="middle" dominant-baseline="central" fill="#ffffff">龙</text>
     </svg>`
-    return sharp(Buffer.from(svg)).png().toBuffer()
+    return sharp(Buffer.from(svg)).jpeg({ quality: 84 }).toBuffer()
   }
 }
 
@@ -135,7 +135,7 @@ async function processOgImage(
     ctx,
     content: thumb,
     slug: `${slug}-og-thumb` as FullSlug,
-    ext: ".png",
+    ext: ".jpg",
   })
 }
 

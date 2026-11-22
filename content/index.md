@@ -22,7 +22,7 @@ status: published
 
 <div class="portal-card">
 
-**[[道/README|道]]**
+**[[01-道/README|道]]**
 
 义理 · 观物 · 经
 
@@ -128,7 +128,7 @@ status: published
 
 <div class="feature-card">
 
-**[[道/README|道]]**
+**[[01-道/README|道]]**
 
 自性恒常 · 初妄无因 · 修行次第 · 归根复命
 

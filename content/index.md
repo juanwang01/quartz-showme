@@ -193,7 +193,7 @@ status: published
 
 ## 站点总览
 
-![[总架构.png]]
+<img src="https://img.longbatian.site/btwy/zongjiagou.png" alt="站点总架构">
 
 ## 联系方式
 

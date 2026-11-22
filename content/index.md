@@ -193,7 +193,7 @@ status: published
 
 ## 站点总览
 
-![[总架构.png]]
+<img src="https://raw.gitcode.com/qq_57305183/PicGo/raw/main/%E6%80%BB%E6%9E%B6%E6%9E%84.png?raw=1" alt="站点总架构">
 
 ## 联系方式
 

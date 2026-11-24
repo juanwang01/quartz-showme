@@ -135,7 +135,7 @@
 <ol>
 <li>rclone bisync 把坚果云内容拉到 <code>/srv/nutstore</code>。</li>
 <li>rsync 将 <code>/srv/nutstore</code> 镜像到 <code>content/</code>。</li>
-<li>有变化则提交并推送 main。</li>
+<li>有变化则提交并推送 main；若远端 main 有新的代码提交，钩子会先 fast-forward/rebase 拉取。</li>
 <li>若 main 的最新提交还没成功发布过，则构建 Quartz。</li>
 <li>构建产物同步到 gh-pages worktree，提交并推送。</li>
 <li>GitHub Pages 自动更新站点。</li>

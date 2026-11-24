@@ -138,8 +138,34 @@
   }
 }
 
-/* ---- 移动端目录抽屉修正（v5 Explorer） ---- */
+/* ---- 顶部间距与移动端目录抽屉修正（v5） ---- */
+/* 桌面/平板：v5 默认侧栏和页面标题各有 6rem 顶部留白，导航离顶太远 */
+@media all and (min-width: 801px) {
+  .page > #quartz-body .sidebar {
+    padding-top: 1rem;
+  }
+
+  .page > #quartz-body .page-header {
+    margin-top: 0;
+  }
+
+  .page-title {
+    margin-top: 0;
+  }
+}
+
 @media all and (max-width: 800px) {
+  /* 导航栏贴顶 */
+  .page > #quartz-body .sidebar.left {
+    padding-top: 0.5rem;
+  }
+
+  /* 去掉标题上下 margin，让标题与目录按钮垂直居中对齐 */
+  .page-title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
   /* 打开目录时锁住背后页面，避免滑动时页面背景跟着走 */
   html.mobile-no-scroll,
   html.mobile-no-scroll body {
@@ -147,8 +173,8 @@
     height: 100dvh;
   }
 
-  /* 标题/工具条比默认 4rem 高，给抽屉顶部留足空间，避免按钮压住第一个文件夹 */
+  /* 抽屉顶部只让出按钮高度 + 一点空隙，不要把第一个文件夹推得太远 */
   .explorer .explorer-content {
-    padding-top: 8rem !important;
+    padding-top: 4rem !important;
   }
 }

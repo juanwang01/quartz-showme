@@ -1,21 +1,12 @@
-// @ts-ignore
-import clipboardScript from "./scripts/clipboard.inline"
-import clipboardStyle from "./styles/clipboard.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-const Body: QuartzComponent = ({ children, fileData, cfg }: QuartzComponentProps) => {
-  // WeChat's crawler builds link thumbnails from the first <img> on the page, ignoring
-  // og:image. Emit one off-screen so the page itself looks unchanged.
-  const usePageThumb =
-    fileData.filePath !== undefined && fileData.frontmatter?.socialImage === undefined
+const Body: QuartzComponent = ({ children, cfg }: QuartzComponentProps) => {
+  // 微信/QQ 的链接卡片会抓页面里第一张 <img>，忽略 og:image。
+  // 放一张屏幕外、不可见的龙标方图，页面外观不受影响。
   const shareThumb =
     cfg.baseUrl && !cfg.baseUrl.startsWith("/")
-      ? usePageThumb
-        ? `https://${cfg.baseUrl}/${fileData.slug!}-og-thumb.jpg`
-        : `https://${cfg.baseUrl}/static/og-image.png`
-      : usePageThumb
-        ? `/${fileData.slug!}-og-thumb.jpg`
-        : `/static/og-image.png`
+      ? `https://${cfg.baseUrl}/static/dragon-mark.png`
+      : `/static/dragon-mark.png`
 
   return (
     <div id="quartz-body">
@@ -36,8 +27,5 @@ const Body: QuartzComponent = ({ children, fileData, cfg }: QuartzComponentProps
     </div>
   )
 }
-
-Body.afterDOMLoaded = clipboardScript
-Body.css = clipboardStyle
 
 export default (() => Body) satisfies QuartzComponentConstructor

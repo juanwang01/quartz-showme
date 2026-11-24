@@ -79,6 +79,7 @@
 <li><strong>元数据不发布</strong>。<code>.obsidian/</code>、<code>.trash/</code>、<code>.claude/</code>、<code>Excalidraw/</code>、<code>.syncignore</code>、坚果云临时文件都会被排除。</li>
 <li><strong>图片不进仓库</strong>。图片统一走 R2 绝对直链，vault 里不留副本。</li>
 <li><strong>密钥不进入仓库</strong>。SMTP 授权码、WebDAV 密码、SSH 私钥都只放在服务器本地，权限 600。</li>
+<li><strong>CDN 依赖本地化</strong>。graph 的 D3/Pixi、KaTeX 的 CSS/JS/字体自托管在 <code>quartz/static/vendor</code>；构建前执行 <code>scripts/patch-quartz-cdn.mjs</code> 把插件里的 jsDelivr 地址换成本地路径，不要再改回 CDN。</li>
 </ul>
 <h2 id="关键组件">关键组件<a role="anchor" aria-hidden tabindex="-1" data-no-popover href="#关键组件" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 

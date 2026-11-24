@@ -1,5 +1,5 @@
 ---
-title: 初步达成双盘
+title: "S初步达成双盘"
 description: 记录双盘打坐从开始到初步达成的过程。
 date: 2026-06-13
 tags:

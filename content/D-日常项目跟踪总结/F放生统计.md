@@ -1,5 +1,5 @@
 ---
-title: 放生统计
+title: "F放生统计"
 description: 放生与其他捐赠的统计汇总。
 date: 2026-06-13
 tags:

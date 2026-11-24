@@ -137,3 +137,18 @@
     padding: 0.9rem 1rem;
   }
 }
+
+/* ---- 移动端目录抽屉修正（v5 Explorer） ---- */
+@media all and (max-width: 800px) {
+  /* 打开目录时锁住背后页面，避免滑动时页面背景跟着走 */
+  html.mobile-no-scroll,
+  html.mobile-no-scroll body {
+    overflow: hidden !important;
+    height: 100dvh;
+  }
+
+  /* 标题/工具条比默认 4rem 高，给抽屉顶部留足空间，避免按钮压住第一个文件夹 */
+  .explorer .explorer-content {
+    padding-top: 8rem !important;
+  }
+}
